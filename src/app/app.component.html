@@ -1,0 +1,18 @@
+<h2>All Goalsh2>
+
+
+
+  <ul class="goals">
+
+
+
+
+    <li *ngFor="let goal of goals">
+
+      <a routerLink="/detail/{{goal.id}}"></a>
+
+      <span class="badge">{{goal.id}}</span> {{goal.name}}
+
+    </ul>
+
+    <goal-detail *ngIf="selectedGoal"></goal-detail>
